@@ -35,10 +35,17 @@ export default function Education({ darkMode }) {
               }`}
             >
               <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
-                <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center gap-1.5">
-                  <Calendar className="w-3.5 h-3.5" />
-                  <span>{edu.period}</span>
-                </span>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center gap-1.5">
+                    <Calendar className="w-3.5 h-3.5" />
+                    <span>{edu.period}</span>
+                  </span>
+                  {edu.marks && (
+                    <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                      {edu.marks}
+                    </span>
+                  )}
+                </div>
                 <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                   {edu.status}
                 </span>

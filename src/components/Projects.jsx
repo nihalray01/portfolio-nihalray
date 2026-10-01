@@ -9,8 +9,10 @@ import spamImg from '../assets/email_spam_detection_1790236355078.png';
 import gestureImg from '../assets/hand_gesture_control_1790236458502.png';
 
 const projectImages = {
+  'documind-ai': ragImg,
   'rag-assistant': ragImg,
   'email-spam-detection': spamImg,
+  'air-writing-recognition': gestureImg,
   'live-gesture-control': gestureImg,
 };
 

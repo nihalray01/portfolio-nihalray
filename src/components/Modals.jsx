@@ -10,47 +10,52 @@ export function ResumeModal({ isOpen, onClose, darkMode }) {
     const resumeText = `
 ================================================================================
 NIHAL RAY
-B.Tech CSE (AI & ML) | Python | Generative AI | Computer Vision | DSA | MERN Stack
+B.Tech CSE (AI & ML) | Python | Generative AI & RAG | Computer Vision | DSA | MERN Stack
 Email: ${personalInfo.email} | Phone: ${personalInfo.phone} | Location: ${personalInfo.location}
 LinkedIn: ${personalInfo.linkedin} | GitHub: ${personalInfo.github}
-Live Project: ${personalInfo.liveProject}
+Portfolio: ${personalInfo.portfolioUrl} | Live Project: ${personalInfo.liveProject}
 ================================================================================
 
 PROFESSIONAL SUMMARY:
-B.Tech student specializing in AI & Machine Learning with hands-on experience in Computer Vision, NLP, Generative AI and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python. Built and deployed ML and web projects, completed an AI internship, and earned 15+ industry certifications from Oracle, MongoDB, Deloitte, JPMorgan Chase, Infosys and Pregrad. Seeking an AI/ML, Data Science or Software Development role to build practical, impactful AI solutions.
+B.Tech student specializing in AI & Machine Learning (CGPA: 7.84/10) with hands-on experience in Computer Vision, NLP, Generative AI (RAG) and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python. Built and deployed ML and web projects, completed an AI internship, and earned 15+ industry certifications from Oracle, MongoDB, Deloitte, JPMorgan Chase, Infosys and Pregrad. Seeking an AI/ML, Data Science or Software Development role to build practical, impactful AI solutions.
 
 EDUCATION:
 - Uttaranchal University, Dehradun (2024 – 2028)
-  B.Tech in Computer Science & Engineering (AI & ML)
+  B.Tech in Computer Science & Engineering (AI & ML) — CGPA: 7.84 / 10
 - Bihar School Examination Board (BSEB) (2024)
-  Senior Secondary (Class XII) – Science
+  Senior Secondary (Class XII) – Science — Score: 60%
 - R.L.S Public School (CBSE) (2022)
-  Secondary (Class X)
+  Secondary (Class X) — Score: 75.4%
 
 TECHNICAL SKILLS:
 - Languages: Python, JavaScript, SQL
 - DSA: 100+ LeetCode problems solved in Python (Arrays, Strings, Hashing, Recursion, Sorting, Graphs)
-- AI / ML: Supervised Learning, Regression, Classification, NLP, Model Evaluation, Deep Learning (fundamentals), TensorFlow
-- Generative AI: LLMs, Prompt Engineering, RAG, AI Agents, Vector Search, Oracle AI Agent Studio
-- Data & CV: Pandas, NumPy, Scikit-learn, EDA, Data Visualization, OpenCV, MediaPipe
+- Generative AI & RAG: RAG, Vector Search, Groq LLM API (gpt-oss-120b), Prompt Engineering, Grounded Q&A, Oracle AI Agent Studio
+- AI / ML & Vision: Supervised Learning, Regression, Classification, NLP, OpenCV, MediaPipe, Scikit-learn, Pandas, NumPy, TensorFlow
 - Web & Databases: MERN Stack (MongoDB, Express, React, Node.js), REST APIs, MongoDB Atlas
-- Tools: Git, GitHub, VS Code, Jupyter Notebook, Vercel
+- Tools & Cloud: Git, GitHub, VS Code, Jupyter Notebook, Vercel
 
 EXPERIENCE:
 - Artificial Intelligence Intern – Codec Technologies India (Jul 2026)
   • Completed an AI internship with hands-on exposure to applied AI/ML workflows and project tasks (credential issued by Codec Technologies India).
 
 PROJECTS:
-1. Splen OS – AI-Powered Web Application (Live Demo: https://splen-ai.vercel.app | GitHub: https://github.com/nihalray01)
+1. DocuMind AI – RAG-Based Document Q&A Assistant (GitHub: https://github.com/nihalray01/documind-ai)
+   • Tech: Python, RAG, Vector Search, Groq API (gpt-oss-120b), Prompt Engineering
+   • PDF natural language Q&A system with configurable chunking, vector similarity scoring, and Groq-hosted LLM answers with file/page citations.
+2. Splen OS – AI-Powered Web Application (Live Demo: https://splen-ai.vercel.app | GitHub: https://github.com/nihalray01/splen-os)
    • Tech: JavaScript, MERN Stack, Generative AI, Vercel
    • Developed and deployed a full-stack web application integrating Generative AI features, built during the AI Fusion 2026 workshop.
-2. Air Writing Recognition Using Webcam (GitHub: https://github.com/nihalray01/air-writing-recognition)
+3. Personal Portfolio Website (Live Demo: https://portfolio-nihalray.vercel.app | GitHub: https://github.com/nihalray01/portfolio-nihalray)
+   • Tech: React, JavaScript, Tailwind CSS, Vercel
+   • Developer portfolio featuring dark/light theme, interactive AI chatbot assistant, and authenticated admin inbox.
+4. Air Writing Recognition Using Webcam (GitHub: https://github.com/nihalray01/air-writing-recognition)
    • Tech: Python, OpenCV, MediaPipe, NumPy, Machine Learning
    • Built a real-time touchless system tracking hand landmarks via webcam and recognizing air-drawn digits using ML models.
-3. Email Spam Detection System (GitHub: https://github.com/nihalray01/email-spam-detection)
+5. Email Spam Detection System (GitHub: https://github.com/nihalray01/email-spam-detection)
    • Tech: Python, Scikit-learn, Pandas, NLP
    • Built an ML classifier to detect spam emails using text preprocessing, tokenization, and feature extraction.
-4. Shortest Distance Finder (GitHub: https://github.com/nihalray01/shortest-distance-finder)
+6. Shortest Distance Finder (GitHub: https://github.com/nihalray01/shortest-distance-finder)
    • Tech: Python, Dijkstra's Algorithm, Graph Theory, DAA
    • Implemented Dijkstra's algorithm to find shortest paths in weighted graphs; analyzed time complexity.
 
@@ -93,7 +98,7 @@ LEADERSHIP & ACTIVITIES:
             </div>
             <div>
               <h3 className="text-xl font-bold">NIHAL RAY — Official Resume</h3>
-              <span className="text-xs font-mono text-sky-400">B.Tech CSE (AI & ML) • 100+ LeetCode DSA</span>
+              <span className="text-xs font-mono text-sky-400">B.Tech CSE (AI & ML) • CGPA 7.84/10 • 100+ LeetCode</span>
             </div>
           </div>
           <button
@@ -146,21 +151,21 @@ LEADERSHIP & ACTIVITIES:
               <div className="flex justify-between items-start">
                 <div>
                   <strong className="text-white text-sm block">Uttaranchal University, Dehradun</strong>
-                  <span className="text-sky-400 text-xs font-mono">B.Tech in Computer Science & Engineering (AI & ML)</span>
+                  <span className="text-sky-400 text-xs font-mono">B.Tech in Computer Science & Engineering (AI & ML) — <span className="text-amber-400 font-bold">CGPA: 7.84 / 10</span></span>
                 </div>
                 <span className="text-xs font-mono text-slate-400">2024 – 2028</span>
               </div>
               <div className="flex justify-between items-start">
                 <div>
                   <strong className="text-slate-200">Bihar School Examination Board (BSEB)</strong>
-                  <span className="text-slate-400 text-xs block font-mono">Senior Secondary (Class XII) – Science</span>
+                  <span className="text-slate-400 text-xs block font-mono">Senior Secondary (Class XII) – Science — <span className="text-amber-400 font-bold">60%</span></span>
                 </div>
                 <span className="text-xs font-mono text-slate-400">2024</span>
               </div>
               <div className="flex justify-between items-start">
                 <div>
                   <strong className="text-slate-200">R.L.S Public School (CBSE)</strong>
-                  <span className="text-slate-400 text-xs block font-mono">Secondary (Class X)</span>
+                  <span className="text-slate-400 text-xs block font-mono">Secondary (Class X) — <span className="text-amber-400 font-bold">75.4%</span></span>
                 </div>
                 <span className="text-xs font-mono text-slate-400">2022</span>
               </div>
@@ -179,7 +184,7 @@ LEADERSHIP & ACTIVITIES:
               </div>
               <div className="p-3 rounded-xl bg-slate-950 border border-slate-800">
                 <strong className="text-sky-400 block mb-1">Generative AI & LLMs:</strong>
-                LLMs, Prompt Engineering, RAG, AI Agents, Vector Search, Oracle AI Agent Studio
+                Groq LLM API (gpt-oss-120b), RAG, Vector Search, Oracle AI Agent Studio, Prompt Engineering
               </div>
               <div className="p-3 rounded-xl bg-slate-950 border border-slate-800">
                 <strong className="text-purple-400 block mb-1">AI / ML & Computer Vision:</strong>
@@ -215,6 +220,14 @@ LEADERSHIP & ACTIVITIES:
               Featured Projects
             </h4>
             <div className="space-y-2 text-xs">
+              <div className="p-3 rounded-xl bg-slate-950 border border-slate-800 space-y-1">
+                <div className="flex justify-between items-center">
+                  <strong className="text-sky-300">DocuMind AI – RAG-Based Document Q&A Assistant</strong>
+                  <span className="text-xs font-mono text-sky-400">Groq LLM API</span>
+                </div>
+                <p className="text-slate-300">RAG PDF Q&A app with configurable text chunking, similarity indexing, and Groq LLM (gpt-oss-120b) grounded citations.</p>
+              </div>
+
               <div className="p-3 rounded-xl bg-slate-950 border border-slate-800 space-y-1">
                 <div className="flex justify-between items-center">
                   <strong className="text-sky-300">Splen OS – AI-Powered Web Application</strong>

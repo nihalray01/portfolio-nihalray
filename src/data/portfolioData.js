@@ -1,34 +1,37 @@
 export const personalInfo = {
   name: "NIHAL RAY",
-  title: "B.Tech CSE (AI & ML) | Python | Generative AI | Computer Vision | DSA | MERN Stack",
+  title: "B.Tech CSE (AI & ML) | Python | Generative AI & RAG | Computer Vision | DSA | MERN Stack",
   degree: "B.Tech in Computer Science & Engineering (AI & ML)",
+  cgpa: "7.84 / 10",
   university: "Uttaranchal University, Dehradun",
   location: "Dehradun, Uttarakhand, India",
   phone: "+91 91222 24552",
   graduationYear: "2024 – 2028",
-  status: "Currently Pursuing",
+  status: "Currently Pursuing (CGPA: 7.84 / 10)",
   email: "nihalray03@gmail.com",
   github: "https://github.com/nihalray01",
   githubUsername: "nihalray01",
   linkedin: "https://www.linkedin.com/in/nihalray-80b270323",
   linkedinUsername: "nihalray-80b270323",
   liveProject: "https://splen-ai.vercel.app",
-  summary: "B.Tech student specializing in AI & Machine Learning with hands-on experience in Computer Vision, NLP, Generative AI and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python. Built and deployed ML and web projects, completed an AI internship, and earned 15+ industry certifications from Oracle, MongoDB, Deloitte, JPMorgan Chase, Infosys and Pregrad. Seeking an AI/ML, Data Science or Software Development role to build practical, impactful AI solutions.",
-  bio: "B.Tech student specializing in AI & Machine Learning with hands-on experience in Computer Vision, NLP, Generative AI and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python. Built and deployed ML and web projects, completed an AI internship, and earned 15+ industry certifications.",
+  portfolioUrl: "https://portfolio-nihalray.vercel.app",
+  summary: "B.Tech student specializing in AI & Machine Learning with hands-on experience in Computer Vision, NLP, Generative AI (RAG) and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python. Built and deployed ML and web projects, completed an AI internship, and earned 15+ industry certifications from Oracle, MongoDB, Deloitte, JPMorgan Chase, Infosys and Pregrad. Seeking an AI/ML, Data Science or Software Development role to build practical, impactful AI solutions.",
+  bio: "B.Tech student specializing in AI & Machine Learning (CGPA: 7.84/10) with hands-on experience in Computer Vision, NLP, Generative AI (RAG) and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python.",
   roles: [
-    "B.Tech CSE (AI & ML) Student",
+    "B.Tech CSE (AI & ML) — CGPA 7.84/10",
     "Generative AI & RAG Developer",
-    "Computer Vision & NLP Enthusiast",
+    "Groq API & LLM Engineer",
+    "Computer Vision & NLP Specialist",
     "DSA Practitioner (100+ LeetCode)",
     "Full-Stack MERN Developer"
   ]
 };
 
 export const stats = [
-  { label: "LeetCode Solved", value: "100+ DSA Problems", icon: "Code2", color: "from-sky-500 to-blue-600" },
+  { label: "Academic CGPA", value: "7.84 / 10 CGPA", icon: "GraduationCap", color: "from-sky-500 to-blue-600" },
+  { label: "LeetCode Solved", value: "100+ DSA Problems", icon: "Code2", color: "from-emerald-500 to-teal-600" },
   { label: "Industry Credentials", value: "15+ Certifications", icon: "Award", color: "from-indigo-500 to-purple-600" },
-  { label: "AI Internship", value: "Codec Technologies", icon: "Briefcase", color: "from-emerald-500 to-teal-600" },
-  { label: "Degree Program", value: "B.Tech CSE (AI & ML)", icon: "GraduationCap", color: "from-purple-500 to-pink-600" },
+  { label: "AI Internship", value: "Codec Technologies", icon: "Briefcase", color: "from-purple-500 to-pink-600" },
 ];
 
 export const skillCategories = [
@@ -38,43 +41,44 @@ export const skillCategories = [
     description: "Core programming languages and algorithmic problem solving",
     skills: [
       { name: "Python", level: 92, tag: "Primary" },
-      { name: "JavaScript", level: 85, tag: "Full-Stack" },
+      { name: "JavaScript", level: 88, tag: "Full-Stack" },
       { name: "SQL", level: 80, tag: "Databases" },
-      { name: "Data Structures & Algorithms", level: 88, tag: "100+ LeetCode" },
+      { name: "Data Structures & Algorithms", level: 90, tag: "100+ LeetCode Solved" },
     ]
   },
   {
-    category: "AI, Machine Learning & Generative AI",
+    category: "Generative AI & LLMs",
     icon: "Brain",
-    description: "Model building, NLP, RAG, AI Agents, and Neural Networks",
+    description: "RAG architectures, Groq LLM API, AI Agents, and Vector Search",
     skills: [
-      { name: "Generative AI & RAG", level: 90, tag: "LLMs & Vector Search" },
-      { name: "AI Agents & Agent Studio", level: 85, tag: "Oracle & LangChain" },
-      { name: "Machine Learning (Supervised/Regression)", level: 88, tag: "Scikit-Learn" },
-      { name: "NLP & Classification", level: 85, tag: "Text Preprocessing" },
-      { name: "Deep Learning (Fundamentals)", level: 75, tag: "TensorFlow" },
+      { name: "RAG & Vector Search", level: 92, tag: "FAISS & Indexing" },
+      { name: "Groq LLM API (gpt-oss-120b)", level: 90, tag: "High-Speed LLMs" },
+      { name: "AI Agents & Agent Studio", level: 88, tag: "Oracle & LangChain" },
+      { name: "Prompt Engineering & Grounded Q&A", level: 92, tag: "Citations & Scores" },
+      { name: "LLMs & Model Evaluation", level: 85, tag: "Generative Models" },
     ]
   },
   {
-    category: "Computer Vision & Data Science",
+    category: "AI, ML & Computer Vision",
     icon: "Eye",
-    description: "Webcam tracking, landmark detection, EDA, and analytics",
+    description: "Computer Vision tracking, NLP, and Predictive Analytics",
     skills: [
-      { name: "OpenCV & MediaPipe", level: 90, tag: "Webcam & Tracking" },
-      { name: "Pandas & NumPy", level: 92, tag: "Data Processing" },
-      { name: "EDA & Data Visualization", level: 88, tag: "Analytics" },
-      { name: "Scikit-Learn", level: 88, tag: "Model Evaluation" },
+      { name: "OpenCV & MediaPipe", level: 90, tag: "Webcam Hand Tracking" },
+      { name: "NLP & Text Classification", level: 88, tag: "Tokenization & TF-IDF" },
+      { name: "Scikit-Learn & Machine Learning", level: 88, tag: "Supervised & Regression" },
+      { name: "Pandas & NumPy", level: 92, tag: "EDA & Data Viz" },
+      { name: "TensorFlow (Fundamentals)", level: 75, tag: "Deep Learning" },
     ]
   },
   {
-    category: "Web, Databases & Tools",
+    category: "Web, Databases & Deployment",
     icon: "Globe",
-    description: "MERN Stack full-stack web development and cloud tools",
+    description: "Full-Stack MERN web development and Vercel cloud deployment",
     skills: [
-      { name: "MERN Stack (MongoDB, Express, React, Node.js)", level: 85, tag: "Full-Stack" },
-      { name: "REST APIs & MongoDB Atlas", level: 88, tag: "Backend & Cloud" },
-      { name: "Git, GitHub & Vercel", level: 90, tag: "CI/CD & Deployment" },
-      { name: "VS Code & Jupyter Notebook", level: 95, tag: "Development" },
+      { name: "MERN Stack (MongoDB, Express, React, Node.js)", level: 88, tag: "Full-Stack" },
+      { name: "MongoDB Atlas & REST APIs", level: 88, tag: "Cloud Databases" },
+      { name: "Vercel & Git/GitHub", level: 92, tag: "CI/CD & Live Apps" },
+      { name: "Responsive Web Design", level: 90, tag: "Dark/Light UI" },
     ]
   }
 ];
@@ -83,28 +87,68 @@ export const projects = [
   {
     id: "splen-os",
     title: "Splen OS – AI-Powered Web Application",
-    subtitle: "Full-Stack MERN Application with Generative AI Features",
+    subtitle: "Full-Stack MERN Web Application with Generative AI",
     category: "Generative AI & MERN",
     filterTag: "web",
+    date: "Sep 2026",
     description: "Developed and deployed a full-stack web application integrating Generative AI features, built during the AI Fusion 2026 MERN Stack with GenAI workshop. Deployed live on Vercel with GitHub version control and continuous deployment.",
     highlights: [
-      "Full-stack MERN web application incorporating GenAI workflows",
+      "Developed full-stack MERN web application incorporating GenAI workflows",
       "Built during AI Fusion 2026 workshop with Splen Technologies & Uttaranchal University",
       "Deployed live on Vercel with continuous integration"
     ],
     tech: ["JavaScript", "MERN Stack", "Generative AI", "Vercel", "GitHub"],
-    github: "https://github.com/nihalray01",
+    github: "https://github.com/nihalray01/splen-os",
     demo: "https://splen-ai.vercel.app",
     featured: true,
     badge: "Live Web App"
   },
   {
+    id: "personal-portfolio",
+    title: "Personal Portfolio Website",
+    subtitle: "Responsive Developer Portfolio with Admin Inbox & AI Chatbot",
+    category: "Web Development",
+    filterTag: "web",
+    date: "Oct 2026",
+    description: "Designed and deployed a responsive portfolio with dark/light theme, downloadable resume, interactive AI Q&A assistant, and an authenticated admin inbox for visitor messages.",
+    highlights: [
+      "Designed and deployed responsive portfolio with dark/light theme",
+      "Interactive downloadable resume generator & AI Q&A chatbot assistant",
+      "Authenticated admin inbox with live local storage message sync"
+    ],
+    tech: ["JavaScript", "React", "Responsive Web Design", "Tailwind CSS", "Vercel"],
+    github: "https://github.com/nihalray01/portfolio-nihalray",
+    demo: "https://portfolio-nihalray.vercel.app",
+    featured: true,
+    badge: "Live Portfolio"
+  },
+  {
+    id: "documind-ai",
+    title: "DocuMind AI – RAG-Based Document Q&A Assistant",
+    subtitle: "PDF Q&A System with Configurable Chunking & Groq LLM API",
+    category: "Generative AI & RAG",
+    filterTag: "ai",
+    date: "Oct 2026",
+    description: "Built a Retrieval-Augmented Generation app to upload PDFs and ask questions about them in natural language. Implemented configurable chunking (size/overlap) and a vector index to retrieve relevant passages by similarity score. Integrated a Groq-hosted LLM to give grounded answers with source citations (file, page, relevance score).",
+    highlights: [
+      "Uploaded PDFs with natural language conversational Q&A capability",
+      "Configurable text chunking (size/overlap) & vector index similarity scoring",
+      "Integrated Groq-hosted LLM (gpt-oss-120b) with source citations (file, page, relevance score)"
+    ],
+    tech: ["Python", "RAG", "Vector Search", "Groq API (gpt-oss-120b)", "Prompt Engineering"],
+    github: "https://github.com/nihalray01/documind-ai",
+    demo: "#",
+    featured: true,
+    badge: "RAG & Groq LLM"
+  },
+  {
     id: "air-writing-recognition",
     title: "Air Writing Recognition Using Webcam",
-    subtitle: "Real-Time Touchless Digit Capture & Recognition",
+    subtitle: "Real-Time Touchless Finger Tracking & Digit Recognition",
     category: "Computer Vision",
     filterTag: "vision",
-    description: "Built a real-time touchless system that tracks hand landmarks via webcam and captures finger movements as air-drawn digits. Converted air-drawn strokes into images and recognized digits using machine learning models.",
+    date: "2026",
+    description: "Built a real-time touchless system that tracks hand landmarks via webcam and recognizes air-drawn digits. Converted air-drawn strokes into images and recognized digits using machine learning models.",
     highlights: [
       "Real-time webcam hand landmark tracking via OpenCV & MediaPipe",
       "Finger movement stroke capture rendered to digit images",
@@ -122,6 +166,7 @@ export const projects = [
     subtitle: "Machine Learning Classifier with NLP Text Preprocessing",
     category: "AI & ML",
     filterTag: "ai",
+    date: "2026",
     description: "Built an ML classifier to detect spam emails using text preprocessing, tokenization, and feature extraction. Evaluated models using accuracy, precision, recall, and confusion matrix.",
     highlights: [
       "Text preprocessing, tokenization, and TF-IDF feature extraction",
@@ -131,7 +176,7 @@ export const projects = [
     tech: ["Python", "Scikit-Learn", "Pandas", "NLP"],
     github: "https://github.com/nihalray01/email-spam-detection",
     demo: "#",
-    featured: true,
+    featured: false,
     badge: "NLP & ML"
   },
   {
@@ -140,6 +185,7 @@ export const projects = [
     subtitle: "Graph Algorithm & DAA Pathfinding Implementation",
     category: "Algorithms & DSA",
     filterTag: "web",
+    date: "2026",
     description: "Implemented Dijkstra's algorithm to find shortest paths in weighted graphs; analyzed time complexity and efficiency.",
     highlights: [
       "Dijkstra's shortest path graph traversal implementation",
@@ -185,7 +231,7 @@ export const certifications = [
     issuer: "MongoDB",
     date: "Jul 2026",
     category: "Generative AI & Databases",
-    credentialId: "5 MongoDB Badges",
+    credentialId: "5 MongoDB Credentials",
     skillsCovered: ["Building RAG Apps", "Building AI Agents", "AI Data Strategy", "AI-Powered Search with Vector Search", "MongoDB Basics"],
     link: "#"
   },
@@ -238,38 +284,39 @@ export const certifications = [
 
 export const education = [
   {
-    degree: "B.Tech in Computer Science & Engineering",
-    specialization: "Artificial Intelligence & Machine Learning",
-    institution: "Uttaranchal University",
+    degree: "B.Tech in Computer Science & Engineering (AI & ML)",
+    institution: "Uttaranchal University, Dehradun",
+    marks: "CGPA: 7.84 / 10",
     location: "Dehradun, Uttarakhand, India",
     period: "2024 – 2028",
     status: "Currently Pursuing",
     details: [
       "Specialized curriculum focusing on Artificial Intelligence, Machine Learning, Computer Vision, NLP, and Data Structures.",
+      "Maintained strong academic standing with a 7.84 / 10 CGPA.",
       "Solved 100+ DSA problems on LeetCode in Python.",
       "Active participant in university AI workshops, hackathons, and student committees."
     ]
   },
   {
     degree: "Senior Secondary (Class XII) – Science",
-    specialization: "Science Stream (Physics, Chemistry, Mathematics)",
     institution: "Bihar School Examination Board (BSEB)",
+    marks: "Score: 60%",
     location: "Bihar, India",
     period: "2024",
     status: "Completed",
     details: [
-      "Completed Class 12 Science stream with strong fundamentals in Mathematics and Computer Science."
+      "Completed Class 12 Science stream with 60% marks, focusing on Physics, Chemistry, and Mathematics."
     ]
   },
   {
     degree: "Secondary (Class X)",
-    specialization: "General CBSE Curriculum",
     institution: "R.L.S Public School (CBSE)",
+    marks: "Score: 75.4%",
     location: "India",
     period: "2022",
     status: "Completed",
     details: [
-      "Completed Class 10 secondary board education under CBSE curriculum."
+      "Completed Class 10 secondary board education under CBSE curriculum with 75.4% marks."
     ]
   }
 ];
