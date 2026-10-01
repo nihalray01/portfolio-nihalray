@@ -30,7 +30,7 @@ export function ResumeModal({ isOpen, onClose, darkMode }) {
             </div>
             <div>
               <h3 className="text-xl font-bold">NIHAL RAY — Official Resume</h3>
-              <span className="text-xs font-mono text-sky-400">B.Tech CSE (AI & ML) • CGPA 7.84/10 • 100+ LeetCode</span>
+              <span className="text-xs font-mono text-sky-400">B.Tech CSE (AI & ML) • 100+ LeetCode DSA</span>
             </div>
           </div>
           <button
@@ -83,21 +83,21 @@ export function ResumeModal({ isOpen, onClose, darkMode }) {
               <div className="flex justify-between items-start">
                 <div>
                   <strong className="text-white text-sm block">Uttaranchal University, Dehradun</strong>
-                  <span className="text-sky-400 text-xs font-mono">B.Tech in Computer Science & Engineering (AI & ML) — <span className="text-amber-400 font-bold">CGPA: 7.84 / 10</span></span>
+                  <span className="text-sky-400 text-xs font-mono">B.Tech in Computer Science & Engineering (AI & ML)</span>
                 </div>
                 <span className="text-xs font-mono text-slate-400">2024 – 2028</span>
               </div>
               <div className="flex justify-between items-start">
                 <div>
                   <strong className="text-slate-200">Bihar School Examination Board (BSEB)</strong>
-                  <span className="text-slate-400 text-xs block font-mono">Senior Secondary (Class XII) – Science — <span className="text-amber-400 font-bold">60%</span></span>
+                  <span className="text-slate-400 text-xs block font-mono">Senior Secondary (Class XII) – Science</span>
                 </div>
                 <span className="text-xs font-mono text-slate-400">2024</span>
               </div>
               <div className="flex justify-between items-start">
                 <div>
                   <strong className="text-slate-200">R.L.S Public School (CBSE)</strong>
-                  <span className="text-slate-400 text-xs block font-mono">Secondary (Class X) — <span className="text-amber-400 font-bold">75.4%</span></span>
+                  <span className="text-slate-400 text-xs block font-mono">Secondary (Class X)</span>
                 </div>
                 <span className="text-xs font-mono text-slate-400">2022</span>
               </div>

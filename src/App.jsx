@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Certifications from './components/Certifications';
+import Education from './components/Education';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -95,6 +96,7 @@ export default function App() {
             <Projects darkMode={darkMode} onSelectProject={(p) => setSelectedProject(p)} />
             <Experience darkMode={darkMode} />
             <Certifications darkMode={darkMode} onSelectCert={(c) => setSelectedCert(c)} />
+            <Education darkMode={darkMode} />
             <Achievements darkMode={darkMode} />
             <Contact darkMode={darkMode} />
           </main>

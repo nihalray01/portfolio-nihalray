@@ -42,36 +42,16 @@ export function generateAIResponse(userQuery) {
 6. **Shortest Distance Finder**: Dijkstra's algorithm for weighted graph traversal.`;
   }
 
-  // 2. Academic CGPA & Marks
-  if (query.includes('cgpa') || query.includes('mark') || query.includes('percentage') || query.includes('score') || query.includes('grade') || query.includes('academic') || query.includes('12th') || query.includes('10th') || query.includes('class')) {
-    return `🎓 **Academic Performance & Marks:**
-
-• **B.Tech CSE (AI & ML) — Uttaranchal University (2024–2028):** CGPA **7.84 / 10** (Currently Pursuing)
-• **Senior Secondary (Class XII) — BSEB (2024):** **60%** (Science Stream)
-• **Secondary (Class X) — R.L.S Public School CBSE (2022):** **75.4%**`;
-  }
-
-  // 3. LeetCode & DSA / Skills
-  if (query.includes('dsa') || query.includes('leetcode') || query.includes('skill') || query.includes('python') || query.includes('mern') || query.includes('stack') || query.includes('know')) {
-    return `🛠️ **Technical Skills & DSA Profile:**
-
-- **DSA:** Solved **100+ DSA problems on LeetCode in Python** (Arrays, Strings, Hashing, Recursion, Sorting, Graphs).
-- **Generative AI & LLMs:** Groq LLM API (\`gpt-oss-120b\`), RAG, Vector Search, Oracle AI Agent Studio, Prompt Engineering.
-- **Languages:** Python, JavaScript, SQL
-- **AI / ML / Vision:** Supervised Learning, Regression, Classification, NLP, OpenCV, MediaPipe, Scikit-Learn, Pandas, NumPy, TensorFlow.
-- **Web & Databases:** MERN Stack (MongoDB, Express, React, Node.js), REST APIs, MongoDB Atlas, Vercel, Git/GitHub.`;
-  }
-
-  // 4. Education
-  if (query.includes('education') || query.includes('degree') || query.includes('university') || query.includes('school') || query.includes('bseb') || query.includes('cbse')) {
+  // 2. Education & Academic Background
+  if (query.includes('education') || query.includes('degree') || query.includes('university') || query.includes('school') || query.includes('bseb') || query.includes('cbse') || query.includes('academic') || query.includes('12th') || query.includes('10th') || query.includes('class')) {
     return `🎓 **Educational Background:**
 
 1. **Uttaranchal University, Dehradun (2024 – 2028)**
-   - B.Tech in Computer Science & Engineering (AI & ML) — **7.84 / 10 CGPA**
+   - B.Tech in Computer Science & Engineering (AI & ML) — Currently Pursuing
 2. **Bihar School Examination Board - BSEB (2024)**
-   - Senior Secondary (Class XII) Science – **60%**
+   - Senior Secondary (Class XII) Science Stream
 3. **R.L.S Public School - CBSE (2022)**
-   - Secondary (Class X) – **75.4%**`;
+   - Secondary (Class X)`;
   }
 
   // 5. Experience & Internship
@@ -120,11 +100,11 @@ export function generateAIResponse(userQuery) {
   // Default Greeting / Fallback
   return `👋 Hi! I am **Nihal Ray's Portfolio Assistant**.
 
-Nihal is a B.Tech CSE (AI & ML) student at Uttaranchal University (CGPA: 7.84/10) with 100+ LeetCode DSA solved, DocuMind AI (Groq LLM API), 15+ industry certifications (Oracle, MongoDB, Deloitte), and an AI Internship at Codec Technologies.
+Nihal is a B.Tech CSE (AI & ML) student at Uttaranchal University with 100+ LeetCode DSA solved, DocuMind AI (Groq LLM API), 15+ industry certifications (Oracle, MongoDB, Deloitte), and an AI Internship at Codec Technologies.
 
 Ask me about his:
 • **DocuMind AI, Splen OS & Air Writing Projects**
-• **Academic CGPA (7.84/10) & Education**
+• **Educational Background & Milestones**
 • **100+ LeetCode DSA & Groq API Skills**
 • **15+ Certifications from Oracle & MongoDB**
 • **Contact & Hiring Information**`;

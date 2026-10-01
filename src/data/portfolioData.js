@@ -2,12 +2,11 @@ export const personalInfo = {
   name: "NIHAL RAY",
   title: "B.Tech CSE (AI & ML) | Python | Generative AI & RAG | Computer Vision | DSA | MERN Stack",
   degree: "B.Tech in Computer Science & Engineering (AI & ML)",
-  cgpa: "7.84 / 10",
   university: "Uttaranchal University, Dehradun",
   location: "Dehradun, Uttarakhand, India",
   phone: "+91 91222 24552",
   graduationYear: "2024 – 2028",
-  status: "Currently Pursuing (CGPA: 7.84 / 10)",
+  status: "Currently Pursuing B.Tech CSE (AI & ML)",
   email: "nihalray03@gmail.com",
   github: "https://github.com/nihalray01",
   githubUsername: "nihalray01",
@@ -16,9 +15,9 @@ export const personalInfo = {
   liveProject: "https://splen-ai.vercel.app",
   portfolioUrl: "https://portfolio-nihalray.vercel.app",
   summary: "B.Tech student specializing in AI & Machine Learning with hands-on experience in Computer Vision, NLP, Generative AI (RAG) and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python. Built and deployed ML and web projects, completed an AI internship, and earned 15+ industry certifications from Oracle, MongoDB, Deloitte, JPMorgan Chase, Infosys and Pregrad. Seeking an AI/ML, Data Science or Software Development role to build practical, impactful AI solutions.",
-  bio: "B.Tech student specializing in AI & Machine Learning (CGPA: 7.84/10) with hands-on experience in Computer Vision, NLP, Generative AI (RAG) and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python.",
+  bio: "B.Tech student specializing in AI & Machine Learning with hands-on experience in Computer Vision, NLP, Generative AI (RAG) and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python.",
   roles: [
-    "B.Tech CSE (AI & ML) — CGPA 7.84/10",
+    "B.Tech CSE (AI & ML)",
     "Generative AI & RAG Developer",
     "Groq API & LLM Engineer",
     "Computer Vision & NLP Specialist",
@@ -286,13 +285,11 @@ export const education = [
   {
     degree: "B.Tech in Computer Science & Engineering (AI & ML)",
     institution: "Uttaranchal University, Dehradun",
-    marks: "CGPA: 7.84 / 10",
     location: "Dehradun, Uttarakhand, India",
     period: "2024 – 2028",
     status: "Currently Pursuing",
     details: [
       "Specialized curriculum focusing on Artificial Intelligence, Machine Learning, Computer Vision, NLP, and Data Structures.",
-      "Maintained strong academic standing with a 7.84 / 10 CGPA.",
       "Solved 100+ DSA problems on LeetCode in Python.",
       "Active participant in university AI workshops, hackathons, and student committees."
     ]
@@ -300,23 +297,21 @@ export const education = [
   {
     degree: "Senior Secondary (Class XII) – Science",
     institution: "Bihar School Examination Board (BSEB)",
-    marks: "Score: 60%",
     location: "Bihar, India",
     period: "2024",
     status: "Completed",
     details: [
-      "Completed Class 12 Science stream with 60% marks, focusing on Physics, Chemistry, and Mathematics."
+      "Completed Class 12 Science stream focusing on Physics, Chemistry, and Mathematics."
     ]
   },
   {
     degree: "Secondary (Class X)",
     institution: "R.L.S Public School (CBSE)",
-    marks: "Score: 75.4%",
     location: "India",
     period: "2022",
     status: "Completed",
     details: [
-      "Completed Class 10 secondary board education under CBSE curriculum with 75.4% marks."
+      "Completed Class 10 secondary board education under CBSE curriculum."
     ]
   }
 ];
