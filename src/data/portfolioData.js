@@ -224,7 +224,7 @@ export const certifications = [
     category: "Oracle AI",
     credentialId: "Oracle Certified Associate",
     skillsCovered: ["Oracle AI Agent Studio", "AI Agents", "Prompt Engineering"],
-    link: "#"
+    link: "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"
   },
   {
     title: "MongoDB Credentials (5 Industry Badges)",
@@ -233,7 +233,7 @@ export const certifications = [
     category: "Generative AI & Databases",
     credentialId: "5 MongoDB Credentials",
     skillsCovered: ["Building RAG Apps", "Building AI Agents", "AI Data Strategy", "AI-Powered Search with Vector Search", "MongoDB Basics"],
-    link: "#"
+    link: "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"
   },
   {
     title: "AI & ML Mentorship Program (3 Months)",
@@ -242,7 +242,7 @@ export const certifications = [
     category: "Mentorship & Projects",
     credentialId: "Pregrad AI/ML Mentorship",
     skillsCovered: ["Skill Development", "Real-Time Projects", "Applied ML"],
-    link: "#"
+    link: "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"
   },
   {
     title: "Industry Job Simulations (Forage)",
@@ -251,7 +251,7 @@ export const certifications = [
     category: "Job Simulations",
     credentialId: "Forage Virtual Experience",
     skillsCovered: ["Deloitte Technology (Jun 2026)", "JPMorgan Chase Software Engineering (Jan 2026)", "Tata GenAI Powered Data Analytics"],
-    link: "#"
+    link: "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"
   },
   {
     title: "MERN Stack with Generative AI – AI Fusion 2026",
@@ -260,7 +260,7 @@ export const certifications = [
     category: "Full-Stack & GenAI",
     credentialId: "AI Fusion 2026 Certificate",
     skillsCovered: ["MERN Stack", "Generative AI Integration", "Splen OS"],
-    link: "#"
+    link: "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"
   },
   {
     title: "Infosys Springboard & FutureSkills Prime",
@@ -269,7 +269,7 @@ export const certifications = [
     category: "GenAI & Python",
     credentialId: "Infosys / FutureSkills",
     skillsCovered: ["Generative AI Landscape (Mar 2026)", "Python / NumPy", "Prompt Engineering & GenAI (Aug 2026)"],
-    link: "#"
+    link: "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"
   },
   {
     title: "Programming with Python (95% Top Performer)",
@@ -278,7 +278,7 @@ export const certifications = [
     category: "Python Core",
     credentialId: "Top Performer 95%",
     skillsCovered: ["Python Core Syntax", "Data Analysis", "Functions & OOP"],
-    link: "#"
+    link: "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"
   }
 ];
 

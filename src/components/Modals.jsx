@@ -331,10 +331,19 @@ export function CertModal({ cert, onClose, darkMode }) {
           </div>
         </div>
 
-        <div className="mt-6 pt-4 border-t border-slate-800 flex justify-end">
+        <div className="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between gap-3">
+          <a
+            href={cert.link || "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2.5 rounded-xl text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/30 flex items-center gap-1.5 transition-colors"
+          >
+            <ExternalLink className="w-3.5 h-3.5" />
+            <span>Verify on LinkedIn ↗</span>
+          </a>
           <button
             onClick={onClose}
-            className="px-5 py-2.5 rounded-xl text-xs font-semibold bg-emerald-500 text-white hover:bg-emerald-600"
+            className="px-5 py-2.5 rounded-xl text-xs font-semibold bg-slate-800 text-slate-200 hover:bg-slate-700 transition-colors"
           >
             Close Credential
           </button>
