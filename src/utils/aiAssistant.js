@@ -111,7 +111,7 @@ export function generateAIResponse(userQuery) {
 - 📧 **Email:** [nihalray03@gmail.com](mailto:nihalray03@gmail.com)
 - 📞 **Phone:** [+91 91222 24552](tel:+919122224552)
 - 📍 **Location:** Dehradun, Uttarakhand, India
-- 💼 **LinkedIn:** [linkedin.com/in/nihalray-80b270323](https://www.linkedin.com/in/nihalray-80b270323)
+- 💼 **LinkedIn:** [linkedin.com/in/nihal-ray-80b270323](https://www.linkedin.com/in/nihal-ray-80b270323)
 - 💻 **GitHub:** [github.com/nihalray01](https://github.com/nihalray01)
 - 🚀 **Splen OS Live App:** [splen-ai.vercel.app](https://splen-ai.vercel.app)
 - 🌐 **Portfolio:** [portfolio-nihalray.vercel.app](https://portfolio-nihalray.vercel.app)`;

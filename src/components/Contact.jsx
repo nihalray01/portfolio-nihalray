@@ -163,7 +163,7 @@ export default function Contact({ darkMode }) {
                   >
                     <div className="flex items-center gap-3">
                       <LinkedinIcon className="w-5 h-5 text-blue-400" />
-                      <span className="text-xs font-mono font-semibold">linkedin.com/in/nihalray-80b270323</span>
+                      <span className="text-xs font-mono font-semibold">linkedin.com/in/{personalInfo.linkedinUsername}</span>
                     </div>
                     <span className="text-xs text-slate-500">Visit ↗</span>
                   </a>

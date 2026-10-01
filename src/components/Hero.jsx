@@ -160,7 +160,7 @@ export default function Hero({ darkMode, onOpenResume }) {
               className="flex items-center gap-2 hover:text-sky-400 transition-colors"
             >
               <LinkedinIcon className="w-4 h-4" />
-              <span>linkedin.com/in/nihalray-80b270323</span>
+              <span>linkedin.com/in/{personalInfo.linkedinUsername}</span>
             </a>
           </div>
 
