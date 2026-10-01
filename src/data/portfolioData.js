@@ -28,7 +28,7 @@ export const personalInfo = {
 };
 
 export const stats = [
-  { label: "Academic CGPA", value: "7.84 / 10 CGPA", icon: "GraduationCap", color: "from-sky-500 to-blue-600" },
+  { label: "AI & ML Projects", value: "6+ Projects", icon: "Sparkles", color: "from-sky-500 to-blue-600" },
   { label: "LeetCode Solved", value: "100+ DSA Problems", icon: "Code2", color: "from-emerald-500 to-teal-600" },
   { label: "Industry Credentials", value: "15+ Certifications", icon: "Award", color: "from-indigo-500 to-purple-600" },
   { label: "AI Internship", value: "Codec Technologies", icon: "Briefcase", color: "from-purple-500 to-pink-600" },
