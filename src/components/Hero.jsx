@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, Download, Mail, ExternalLink, Phone } from 'lucide-react';
+import { ArrowRight, Download, Mail, ExternalLink, Phone, FileText } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 import { personalInfo } from '../data/portfolioData';
 import nihalPhoto from '../assets/nihal_ray.jpg';
+import resumePdf from '../assets/NIHAL_RAY_RESUME.pdf';
 
 export default function Hero({ darkMode, onOpenResume }) {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -108,8 +109,9 @@ export default function Hero({ darkMode, onOpenResume }) {
               <span>Splen OS Live App</span>
             </a>
 
-            <button
-              onClick={onOpenResume}
+            <a
+              href={resumePdf}
+              download="NIHAL_RAY_RESUME.pdf"
               className={`px-6 py-3 rounded-xl font-semibold text-sm border transition-all flex items-center gap-2 ${
                 darkMode
                   ? 'bg-slate-900 border-slate-800 text-slate-200 hover:bg-slate-800 hover:border-slate-700'
@@ -117,7 +119,19 @@ export default function Hero({ darkMode, onOpenResume }) {
               }`}
             >
               <Download className="w-4 h-4 text-sky-400" />
-              <span>Download Resume</span>
+              <span>Download Resume PDF</span>
+            </a>
+
+            <button
+              onClick={onOpenResume}
+              className={`px-4 py-3 rounded-xl font-medium text-xs border transition-all flex items-center gap-1.5 ${
+                darkMode
+                  ? 'bg-slate-900/60 border-slate-800 text-slate-400 hover:text-white'
+                  : 'bg-slate-100 border-slate-200 text-slate-600 hover:text-slate-900'
+              }`}
+            >
+              <FileText className="w-3.5 h-3.5 text-sky-400" />
+              <span>Preview</span>
             </button>
           </div>
 

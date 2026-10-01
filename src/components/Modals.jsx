@@ -2,83 +2,15 @@ import React from 'react';
 import { X, Download, ExternalLink, CheckCircle2, FileText, Award, Phone, Mail, MapPin, Globe } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 import { personalInfo } from '../data/portfolioData';
+import resumePdf from '../assets/NIHAL_RAY_RESUME.pdf';
 
 export function ResumeModal({ isOpen, onClose, darkMode }) {
   if (!isOpen) return null;
 
   const handleDownload = () => {
-    const resumeText = `
-================================================================================
-NIHAL RAY
-B.Tech CSE (AI & ML) | Python | Generative AI & RAG | Computer Vision | DSA | MERN Stack
-Email: ${personalInfo.email} | Phone: ${personalInfo.phone} | Location: ${personalInfo.location}
-LinkedIn: ${personalInfo.linkedin} | GitHub: ${personalInfo.github}
-Portfolio: ${personalInfo.portfolioUrl} | Live Project: ${personalInfo.liveProject}
-================================================================================
-
-PROFESSIONAL SUMMARY:
-B.Tech student specializing in AI & Machine Learning (CGPA: 7.84/10) with hands-on experience in Computer Vision, NLP, Generative AI (RAG) and full-stack (MERN) development. Solved 100+ DSA problems on LeetCode in Python. Built and deployed ML and web projects, completed an AI internship, and earned 15+ industry certifications from Oracle, MongoDB, Deloitte, JPMorgan Chase, Infosys and Pregrad. Seeking an AI/ML, Data Science or Software Development role to build practical, impactful AI solutions.
-
-EDUCATION:
-- Uttaranchal University, Dehradun (2024 – 2028)
-  B.Tech in Computer Science & Engineering (AI & ML) — CGPA: 7.84 / 10
-- Bihar School Examination Board (BSEB) (2024)
-  Senior Secondary (Class XII) – Science — Score: 60%
-- R.L.S Public School (CBSE) (2022)
-  Secondary (Class X) — Score: 75.4%
-
-TECHNICAL SKILLS:
-- Languages: Python, JavaScript, SQL
-- DSA: 100+ LeetCode problems solved in Python (Arrays, Strings, Hashing, Recursion, Sorting, Graphs)
-- Generative AI & RAG: RAG, Vector Search, Groq LLM API (gpt-oss-120b), Prompt Engineering, Grounded Q&A, Oracle AI Agent Studio
-- AI / ML & Vision: Supervised Learning, Regression, Classification, NLP, OpenCV, MediaPipe, Scikit-learn, Pandas, NumPy, TensorFlow
-- Web & Databases: MERN Stack (MongoDB, Express, React, Node.js), REST APIs, MongoDB Atlas
-- Tools & Cloud: Git, GitHub, VS Code, Jupyter Notebook, Vercel
-
-EXPERIENCE:
-- Artificial Intelligence Intern – Codec Technologies India (Jul 2026)
-  • Completed an AI internship with hands-on exposure to applied AI/ML workflows and project tasks (credential issued by Codec Technologies India).
-
-PROJECTS:
-1. DocuMind AI – RAG-Based Document Q&A Assistant (GitHub: https://github.com/nihalray01/documind-ai)
-   • Tech: Python, RAG, Vector Search, Groq API (gpt-oss-120b), Prompt Engineering
-   • PDF natural language Q&A system with configurable chunking, vector similarity scoring, and Groq-hosted LLM answers with file/page citations.
-2. Splen OS – AI-Powered Web Application (Live Demo: https://splen-ai.vercel.app | GitHub: https://github.com/nihalray01/splen-os)
-   • Tech: JavaScript, MERN Stack, Generative AI, Vercel
-   • Developed and deployed a full-stack web application integrating Generative AI features, built during the AI Fusion 2026 workshop.
-3. Personal Portfolio Website (Live Demo: https://portfolio-nihalray.vercel.app | GitHub: https://github.com/nihalray01/portfolio-nihalray)
-   • Tech: React, JavaScript, Tailwind CSS, Vercel
-   • Developer portfolio featuring dark/light theme, interactive AI chatbot assistant, and authenticated admin inbox.
-4. Air Writing Recognition Using Webcam (GitHub: https://github.com/nihalray01/air-writing-recognition)
-   • Tech: Python, OpenCV, MediaPipe, NumPy, Machine Learning
-   • Built a real-time touchless system tracking hand landmarks via webcam and recognizing air-drawn digits using ML models.
-5. Email Spam Detection System (GitHub: https://github.com/nihalray01/email-spam-detection)
-   • Tech: Python, Scikit-learn, Pandas, NLP
-   • Built an ML classifier to detect spam emails using text preprocessing, tokenization, and feature extraction.
-6. Shortest Distance Finder (GitHub: https://github.com/nihalray01/shortest-distance-finder)
-   • Tech: Python, Dijkstra's Algorithm, Graph Theory, DAA
-   • Implemented Dijkstra's algorithm to find shortest paths in weighted graphs; analyzed time complexity.
-
-CERTIFICATIONS (15+ Credentials):
-- Oracle Fusion AI Agent Studio Certified Foundations Associate (Rel 1) – Oracle, Jun 2026
-- MongoDB (5 credentials) – Building RAG Apps; Building AI Agents; AI Data Strategy; AI-Powered Search with Vector Search; MongoDB Basics, Jul 2026
-- AI & ML Mentorship Program (3 months) – Pregrad, Aug 2026
-- Job Simulations (Forage) – Deloitte Australia Technology (Jun 2026); JPMorgan Chase Software Engineering (Jan 2026); Tata Group GenAI Data Analytics
-- MERN Stack with Generative AI – AI Fusion 2026 – Splen Technologies & Uttaranchal University, Sep 2026
-- Infosys Springboard & FutureSkills Prime – Generative AI Landscape; Python / NumPy (Mar 2026) | Prompt Engineering & GenAI (Aug 2026)
-- Programming with Python – Internshala Trainings, Jul 2025 (95%, Top Performer)
-
-LEADERSHIP & ACTIVITIES:
-- Student Coordinator, Cultural Committee, UIT – planned and executed university events with cross-functional teams.
-- Class Representative – coordinated between students and faculty and helped organize academic activities.
-================================================================================
-    `.trim();
-
-    const blob = new Blob([resumeText], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
-    link.href = url;
-    link.download = 'NIHAL_RAY_RESUME_AIML.txt';
+    link.href = resumePdf;
+    link.download = 'NIHAL_RAY_RESUME.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
