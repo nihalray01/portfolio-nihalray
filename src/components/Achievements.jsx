@@ -52,7 +52,7 @@ export default function Achievements({ darkMode }) {
                       </h3>
                       <span className="text-xs font-mono text-slate-400">{item.period}</span>
                     </div>
-                    <span className="text-xs font-semibold text-cyan-400 block font-mono">
+                    <span className={`text-xs font-semibold ${darkMode ? 'text-cyan-400' : 'text-blue-600'} block font-mono`}>
                       {item.organization}
                     </span>
                     <p className={`text-sm leading-relaxed ${darkMode ? 'text-slate-300' : 'text-slate-600'}`}>

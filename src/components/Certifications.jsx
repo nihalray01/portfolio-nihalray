@@ -72,13 +72,13 @@ export default function Certifications({ darkMode, onSelectCert }) {
               </div>
 
               {/* Action Button */}
-              <div className="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between">
-                <span className="text-[11px] font-mono text-slate-500">ID: {cert.credentialId}</span>
+              <div className={`mt-6 pt-4 border-t ${darkMode ? 'border-slate-800/60' : 'border-slate-100'} flex items-center justify-between`}>
+                <span className={`text-[11px] font-mono ${darkMode ? 'text-slate-500' : 'text-slate-400'}`}>ID: {cert.credentialId}</span>
                 <a
                   href={cert.link || "https://www.linkedin.com/in/nihal-ray-80b270323/details/certifications/"}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5 transition-all"
+                  className="px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5 transition-all"
                 >
                   <ExternalLink className="w-3.5 h-3.5" />
                   <span>View Certificate</span>

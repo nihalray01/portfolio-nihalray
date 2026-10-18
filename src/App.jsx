@@ -18,7 +18,7 @@ import ParticlesBackground from './components/ParticlesBackground';
 import { ResumeModal, ProjectModal, CertModal } from './components/Modals';
 
 export default function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(() => {

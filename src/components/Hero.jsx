@@ -136,10 +136,12 @@ export default function Hero({ darkMode, onOpenResume }) {
           </div>
 
           {/* Direct Social & Contact Links */}
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-5 pt-4 border-t border-slate-800/60 text-xs font-mono text-slate-400">
+          <div className={`flex flex-wrap items-center justify-center lg:justify-start gap-5 pt-4 border-t ${
+            darkMode ? 'border-slate-800/60 text-slate-400' : 'border-slate-200 text-slate-600'
+          } text-xs font-mono`}>
             <a
               href={`tel:${personalInfo.phone}`}
-              className="flex items-center gap-2 hover:text-sky-400 transition-colors"
+              className={`flex items-center gap-2 ${darkMode ? 'hover:text-sky-400' : 'hover:text-sky-600'} transition-colors`}
             >
               <Phone className="w-4 h-4 text-sky-400" />
               <span>{personalInfo.phone}</span>
@@ -148,7 +150,7 @@ export default function Hero({ darkMode, onOpenResume }) {
               href={personalInfo.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-sky-400 transition-colors"
+              className={`flex items-center gap-2 ${darkMode ? 'hover:text-sky-400' : 'hover:text-sky-600'} transition-colors`}
             >
               <GithubIcon className="w-4 h-4" />
               <span>github.com/nihalray01</span>
@@ -157,7 +159,7 @@ export default function Hero({ darkMode, onOpenResume }) {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-sky-400 transition-colors"
+              className={`flex items-center gap-2 ${darkMode ? 'hover:text-sky-400' : 'hover:text-sky-600'} transition-colors`}
             >
               <LinkedinIcon className="w-4 h-4" />
               <span>linkedin.com/in/{personalInfo.linkedinUsername}</span>
@@ -175,25 +177,33 @@ export default function Hero({ darkMode, onOpenResume }) {
             } space-y-4`}>
               
               {/* Profile Image Frame */}
-              <div className="relative h-[420px] sm:h-[480px] w-full rounded-2xl overflow-hidden bg-slate-950 border border-slate-800/60">
+              <div className={`relative h-[420px] sm:h-[480px] w-full rounded-2xl overflow-hidden border ${
+                darkMode ? 'bg-slate-950 border-slate-800/60' : 'bg-slate-100 border-slate-200'
+              }`}>
                 <img
                   src={nihalPhoto}
                   alt="Nihal Ray - Computer Science Engineering Student"
-                  className="w-full h-full object-cover object-[center_75%]"
+                  className="w-full h-full object-cover object-[center_10%]"
                 />
                 
                 {/* Subtle vignette gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 pointer-events-none" />
+                <div className={`absolute inset-0 bg-gradient-to-t ${
+                  darkMode ? 'from-slate-950 via-slate-950/20 to-transparent opacity-80' : 'from-slate-900/40 via-transparent to-transparent opacity-40'
+                } pointer-events-none`} />
 
                 {/* Floating Clean Badge */}
-                <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800 text-white space-y-1">
+                <div className={`absolute bottom-3 left-3 right-3 p-3 rounded-xl backdrop-blur-md border ${
+                  darkMode
+                    ? 'bg-slate-900/90 border-slate-800 text-white'
+                    : 'bg-white/95 border-slate-200/90 text-slate-900 shadow-md'
+                } space-y-1`}>
                   <div className="flex items-center justify-between">
-                    <h3 className="font-bold text-sm">Nihal Ray</h3>
-                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 border border-sky-500/30">
+                    <h3 className={`font-bold text-sm ${darkMode ? 'text-white' : 'text-slate-900'}`}>Nihal Ray</h3>
+                    <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-500/20 text-sky-600 dark:text-sky-300 border border-sky-500/30 font-semibold">
                       AI & ML CSE
                     </span>
                   </div>
-                  <p className="text-[11px] font-mono text-slate-400">
+                  <p className={`text-[11px] font-mono ${darkMode ? 'text-slate-400' : 'text-slate-600'}`}>
                     Uttaranchal University, Dehradun (2024–2028)
                   </p>
                 </div>

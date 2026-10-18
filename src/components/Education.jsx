@@ -48,12 +48,16 @@ export default function Education({ darkMode }) {
                 <h3 className={`text-xl sm:text-2xl font-extrabold ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                   {edu.institution}
                 </h3>
-                <div className="text-base font-semibold text-sky-400">
+                <div className={`text-base font-semibold ${darkMode ? 'text-sky-400' : 'text-sky-600'}`}>
                   {edu.degree}
                 </div>
-                <div className="flex items-center gap-2 text-xs font-mono text-slate-400">
-                  <span>{edu.specialization}</span>
-                  <span>•</span>
+                <div className={`flex items-center gap-2 text-xs font-mono ${darkMode ? 'text-slate-400' : 'text-slate-500'}`}>
+                  {edu.specialization && (
+                    <>
+                      <span>{edu.specialization}</span>
+                      <span>•</span>
+                    </>
+                  )}
                   <span className="flex items-center gap-1">
                     <MapPin className="w-3 h-3 text-rose-400" />
                     {edu.location}
@@ -62,10 +66,10 @@ export default function Education({ darkMode }) {
               </div>
 
               {/* Details */}
-              <div className="space-y-2 pt-3 border-t border-slate-800/60">
+              <div className={`space-y-2 pt-3 border-t ${darkMode ? 'border-slate-800/60' : 'border-slate-100'}`}>
                 {edu.details.map((detail, dIdx) => (
                   <div key={dIdx} className="flex items-start gap-2.5 text-xs sm:text-sm">
-                    <CheckCircle2 className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className={`w-4 h-4 ${darkMode ? 'text-sky-400' : 'text-sky-600'} shrink-0 mt-0.5`} />
                     <span className={darkMode ? 'text-slate-300' : 'text-slate-700'}>{detail}</span>
                   </div>
                 ))}

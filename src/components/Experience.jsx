@@ -22,13 +22,15 @@ export default function Experience({ darkMode }) {
         </div>
 
         {/* Timeline Container */}
-        <div className="relative border-l-2 border-slate-800/80 dark:border-slate-800 ml-4 sm:ml-8 pl-6 sm:pl-8 space-y-10">
+        <div className={`relative border-l-2 ${darkMode ? 'border-slate-800' : 'border-slate-200'} ml-4 sm:ml-8 pl-6 sm:pl-8 space-y-10`}>
           {experienceTimeline.map((item, index) => (
             <div key={index} className="relative group">
               
               {/* Timeline Bullet Node */}
-              <div className="absolute -left-[31px] sm:-left-[39px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-cyan-400 flex items-center justify-center shadow-md shadow-cyan-500/20 group-hover:scale-125 transition-transform duration-300">
-                <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+              <div className={`absolute -left-[31px] sm:-left-[39px] top-1.5 w-6 h-6 rounded-full ${
+                darkMode ? 'bg-slate-950 border-cyan-400 shadow-cyan-500/20' : 'bg-white border-blue-500 shadow-blue-500/20'
+              } border-2 flex items-center justify-center shadow-md group-hover:scale-125 transition-transform duration-300`}>
+                <div className={`w-2 h-2 rounded-full ${darkMode ? 'bg-cyan-400' : 'bg-blue-500'} animate-pulse`} />
               </div>
 
               {/* Timeline Content Card */}
@@ -40,7 +42,7 @@ export default function Experience({ darkMode }) {
                 
                 {/* Meta Bar */}
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                  <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 flex items-center gap-1.5">
+                  <span className="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-cyan-500/10 text-cyan-500 dark:text-cyan-400 border border-cyan-500/20 flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5" />
                     <span>{item.period}</span>
                   </span>
@@ -55,7 +57,7 @@ export default function Experience({ darkMode }) {
                   <h3 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-slate-900'}`}>
                     {item.role}
                   </h3>
-                  <div className="flex items-center gap-2 text-sm font-semibold text-cyan-400">
+                  <div className={`flex items-center gap-2 text-sm font-semibold ${darkMode ? 'text-cyan-400' : 'text-blue-600'}`}>
                     <Award className="w-4 h-4" />
                     <span>{item.organization}</span>
                   </div>
@@ -66,13 +68,13 @@ export default function Experience({ darkMode }) {
                 </p>
 
                 {/* Outcomes List */}
-                <div className="space-y-2 pt-2 border-t border-slate-800/60">
-                  <span className="text-xs font-mono uppercase text-slate-400 font-semibold block mb-2">
+                <div className={`space-y-2 pt-2 border-t ${darkMode ? 'border-slate-800/60' : 'border-slate-100'}`}>
+                  <span className={`text-xs font-mono uppercase ${darkMode ? 'text-slate-400' : 'text-slate-500'} font-semibold block mb-2`}>
                     Key Outcomes & Accomplishments:
                   </span>
                   {item.outcomes.map((outcome, oIdx) => (
                     <div key={oIdx} className="flex items-start gap-2.5 text-xs sm:text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-cyan-500 dark:text-cyan-400 shrink-0 mt-0.5" />
                       <span className={darkMode ? 'text-slate-300' : 'text-slate-700'}>{outcome}</span>
                     </div>
                   ))}
